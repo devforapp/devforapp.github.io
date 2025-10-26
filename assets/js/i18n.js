@@ -65,10 +65,6 @@ const translations = {
         'contact_email_title': 'Email',
         'contact_business_title': 'Business Inquiries',
         'contact_support_title': 'Support',
-        'form_name': 'Your Name',
-        'form_email': 'Your Email',
-        'form_message': 'Your Message',
-        'form_send': 'Send Message',
         
         // Footer
         'footer_description': 'Creating innovative iOS applications for a better digital experience.',
@@ -146,10 +142,6 @@ const translations = {
         'contact_email_title': '邮箱',
         'contact_business_title': '商务咨询',
         'contact_support_title': '技术支持',
-        'form_name': '您的姓名',
-        'form_email': '您的邮箱',
-        'form_message': '您的留言',
-        'form_send': '发送消息',
         
         // Footer
         'footer_description': '创造创新的iOS应用程序，提供更好的数字体验。',
@@ -227,10 +219,6 @@ const translations = {
         'contact_email_title': 'メール',
         'contact_business_title': 'ビジネスお問い合わせ',
         'contact_support_title': 'サポート',
-        'form_name': 'お名前',
-        'form_email': 'メールアドレス',
-        'form_message': 'メッセージ',
-        'form_send': 'メッセージを送信',
         
         // Footer
         'footer_description': 'より良いデジタル体験のための革新的なiOSアプリケーションを創造。',
@@ -308,10 +296,6 @@ const translations = {
         'contact_email_title': 'E-Mail',
         'contact_business_title': 'Geschäftsanfragen',
         'contact_support_title': 'Support',
-        'form_name': 'Ihr Name',
-        'form_email': 'Ihre E-Mail',
-        'form_message': 'Ihre Nachricht',
-        'form_send': 'Nachricht senden',
         
         // Footer
         'footer_description': 'Innovative iOS-Anwendungen für eine bessere digitale Erfahrung schaffen.',
@@ -389,10 +373,6 @@ const translations = {
         'contact_email_title': 'E-mail',
         'contact_business_title': 'Demandes commerciales',
         'contact_support_title': 'Support',
-        'form_name': 'Votre nom',
-        'form_email': 'Votre e-mail',
-        'form_message': 'Votre message',
-        'form_send': 'Envoyer le message',
         
         // Footer
         'footer_description': 'Créer des applications iOS innovantes pour une meilleure expérience numérique.',
@@ -470,10 +450,6 @@ const translations = {
         'contact_email_title': '이메일',
         'contact_business_title': '비즈니스 문의',
         'contact_support_title': '지원',
-        'form_name': '이름',
-        'form_email': '이메일',
-        'form_message': '메시지',
-        'form_send': '메시지 보내기',
         
         // Footer
         'footer_description': '더 나은 디지털 경험을 위한 혁신적인 iOS 애플리케이션 창조.',
@@ -551,10 +527,6 @@ const translations = {
         'contact_email_title': '電子郵件',
         'contact_business_title': '商務諮詢',
         'contact_support_title': '技術支援',
-        'form_name': '您的姓名',
-        'form_email': '您的電子郵件',
-        'form_message': '您的留言',
-        'form_send': '發送訊息',
         
         // Footer
         'footer_description': '創造創新的iOS應用程式，提供更好的數位體驗。',
@@ -632,10 +604,6 @@ const translations = {
         'contact_email_title': 'Correo electrónico',
         'contact_business_title': 'Consultas comerciales',
         'contact_support_title': 'Soporte',
-        'form_name': 'Tu nombre',
-        'form_email': 'Tu correo electrónico',
-        'form_message': 'Tu mensaje',
-        'form_send': 'Enviar mensaje',
         
         // Footer
         'footer_description': 'Creando aplicaciones iOS innovadoras para una mejor experiencia digital.',
@@ -713,10 +681,6 @@ const translations = {
         'contact_email_title': 'E-mail',
         'contact_business_title': 'Consultas comerciais',
         'contact_support_title': 'Suporte',
-        'form_name': 'Seu nome',
-        'form_email': 'Seu e-mail',
-        'form_message': 'Sua mensagem',
-        'form_send': 'Enviar mensagem',
         
         // Footer
         'footer_description': 'Criando aplicativos iOS inovadores para uma melhor experiência digital.',
@@ -794,10 +758,6 @@ const translations = {
         'contact_email_title': 'Email',
         'contact_business_title': 'Richieste commerciali',
         'contact_support_title': 'Supporto',
-        'form_name': 'Il tuo nome',
-        'form_email': 'La tua email',
-        'form_message': 'Il tuo messaggio',
-        'form_send': 'Invia messaggio',
         
         // Footer
         'footer_description': 'Creare applicazioni iOS innovative per una migliore esperienza digitale.',
@@ -875,10 +835,6 @@ const translations = {
         'contact_email_title': 'البريد الإلكتروني',
         'contact_business_title': 'الاستفسارات التجارية',
         'contact_support_title': 'الدعم',
-        'form_name': 'اسمك',
-        'form_email': 'بريدك الإلكتروني',
-        'form_message': 'رسالتك',
-        'form_send': 'إرسال الرسالة',
         
         // Footer
         'footer_description': 'إنشاء تطبيقات iOS مبتكرة لتجربة رقمية أفضل.',
@@ -956,10 +912,6 @@ const translations = {
         'contact_email_title': 'ईमेल',
         'contact_business_title': 'व्यावसायिक पूछताछ',
         'contact_support_title': 'सहायता',
-        'form_name': 'आपका नाम',
-        'form_email': 'आपका ईमेल',
-        'form_message': 'आपका संदेश',
-        'form_send': 'संदेश भेजें',
         
         // Footer
         'footer_description': 'बेहतर डिजिटल अनुभव के लिए नवाचार iOS एप्लिकेशन बनाना।',
@@ -1037,10 +989,6 @@ const translations = {
         'contact_email_title': 'Электронная почта',
         'contact_business_title': 'Деловые запросы',
         'contact_support_title': 'Поддержка',
-        'form_name': 'Ваше имя',
-        'form_email': 'Ваш email',
-        'form_message': 'Ваше сообщение',
-        'form_send': 'Отправить сообщение',
         
         // Footer
         'footer_description': 'Создание инновационных iOS приложений для лучшего цифрового опыта.',
