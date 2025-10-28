@@ -31,6 +31,8 @@ const translations = {
         'app_voice_recorder_desc': 'AI-powered voice to text transcription with high accuracy',
         'app_watermark_camera_name': 'WaterMark Camera',
         'app_watermark_camera_desc': 'Professional watermark camera for work check-in and attendance',
+        'app_bazi_master_name': 'Bazi Master',
+        'app_bazi_master_desc': 'Professional Chinese astrology and fortune telling app with Bazi analysis',
         
         // Features
         'feature_offline': 'Offline Translation',
@@ -51,6 +53,9 @@ const translations = {
         'feature_work_checkin': 'Work Check-in',
         'feature_timestamp': 'Timestamp',
         'feature_location': 'Location',
+        'feature_bazi_chart': 'Bazi Chart',
+        'feature_lunar_calendar': 'Lunar Calendar',
+        'feature_divination': 'Divination',
         
         // About Section
         'about_title': 'About TianDev Studio',
@@ -108,6 +113,8 @@ const translations = {
         'app_voice_recorder_desc': 'AI驱动的高精度语音转文字转录应用',
         'app_watermark_camera_name': '水印相机',
         'app_watermark_camera_desc': '专业水印相机，用于工作打卡和考勤',
+        'app_bazi_master_name': '五行八字大师',
+        'app_bazi_master_desc': '专业的中国传统命理分析应用，提供八字排盘和运势预测',
         
         // Features
         'feature_offline': '离线翻译',
@@ -128,6 +135,9 @@ const translations = {
         'feature_work_checkin': '工作打卡',
         'feature_timestamp': '时间戳',
         'feature_location': '位置信息',
+        'feature_bazi_chart': '八字排盘',
+        'feature_lunar_calendar': '农历转换',
+        'feature_divination': '周易占卜',
         
         // About Section
         'about_title': '关于TianDev工作室',
@@ -185,6 +195,8 @@ const translations = {
         'app_voice_recorder_desc': 'AI搭載の高精度音声テキスト変換アプリ',
         'app_watermark_camera_name': 'ウォーターマークカメラ',
         'app_watermark_camera_desc': '勤怠管理と出勤確認のためのプロフェッショナルなウォーターマークカメラ',
+        'app_bazi_master_name': '五行八字マスター',
+        'app_bazi_master_desc': '八字分析による本格的な中国占星術と運勢占いアプリ',
         
         // Features
         'feature_offline': 'オフライン翻訳',
@@ -205,6 +217,9 @@ const translations = {
         'feature_work_checkin': '勤怠チェックイン',
         'feature_timestamp': 'タイムスタンプ',
         'feature_location': '位置情報',
+        'feature_bazi_chart': '八字排盤',
+        'feature_lunar_calendar': '旧暦変換',
+        'feature_divination': '易占い',
         
         // About Section
         'about_title': 'TianDevスタジオについて',
@@ -262,6 +277,8 @@ const translations = {
         'app_voice_recorder_desc': 'KI-gestützte Sprache-zu-Text-Transkription mit hoher Genauigkeit',
         'app_watermark_camera_name': 'Wasserzeichen-Kamera',
         'app_watermark_camera_desc': 'Professionelle Wasserzeichen-Kamera für Arbeitszeit-Erfassung',
+        'app_bazi_master_name': 'Bazi Meister',
+        'app_bazi_master_desc': 'Professionelle chinesische Astrologie und Wahrsage-App mit Bazi-Analyse',
         
         // Features
         'feature_offline': 'Offline-Übersetzung',
@@ -282,6 +299,9 @@ const translations = {
         'feature_work_checkin': 'Arbeitszeit-Check-in',
         'feature_timestamp': 'Zeitstempel',
         'feature_location': 'Standort',
+        'feature_bazi_chart': 'Bazi-Diagramm',
+        'feature_lunar_calendar': 'Mondkalender',
+        'feature_divination': 'Wahrsagung',
         
         // About Section
         'about_title': 'Über TianDev Studio',
@@ -339,6 +359,8 @@ const translations = {
         'app_voice_recorder_desc': 'Transcription vocale vers texte alimentée par l\'IA avec haute précision',
         'app_watermark_camera_name': 'Caméra filigrane',
         'app_watermark_camera_desc': 'Caméra filigrane professionnelle pour pointage et présence au travail',
+        'app_bazi_master_name': 'Maître Bazi',
+        'app_bazi_master_desc': 'Application professionnelle d\'astrologie chinoise et de divination avec analyse Bazi',
         
         // Features
         'feature_offline': 'Traduction hors ligne',
@@ -359,6 +381,9 @@ const translations = {
         'feature_work_checkin': 'Pointage travail',
         'feature_timestamp': 'Horodatage',
         'feature_location': 'Localisation',
+        'feature_bazi_chart': 'Diagramme Bazi',
+        'feature_lunar_calendar': 'Calendrier lunaire',
+        'feature_divination': 'Divination',
         
         // About Section
         'about_title': 'À propos de TianDev Studio',
@@ -416,6 +441,8 @@ const translations = {
         'app_voice_recorder_desc': '높은 정확도의 AI 기반 음성-텍스트 변환 앱',
         'app_watermark_camera_name': '워터마크 카메라',
         'app_watermark_camera_desc': '업무 체크인 및 출근 확인을 위한 전문 워터마크 카메라',
+        'app_bazi_master_name': '오행팔자 마스터',
+        'app_bazi_master_desc': '팔자 분석을 통한 전문 중국 점성술 및 운세 앱',
         
         // Features
         'feature_offline': '오프라인 번역',
@@ -436,6 +463,9 @@ const translations = {
         'feature_work_checkin': '업무 체크인',
         'feature_timestamp': '타임스탬프',
         'feature_location': '위치',
+        'feature_bazi_chart': '팔자 차트',
+        'feature_lunar_calendar': '음력 달력',
+        'feature_divination': '점술',
         
         // About Section
         'about_title': 'TianDev 스튜디오 소개',
@@ -493,6 +523,8 @@ const translations = {
         'app_voice_recorder_desc': 'AI驅動的高精度語音轉文字轉錄應用程式',
         'app_watermark_camera_name': '浮水印相機',
         'app_watermark_camera_desc': '專業浮水印相機，用於工作打卡和考勤',
+        'app_bazi_master_name': '五行八字大師',
+        'app_bazi_master_desc': '專業的中國傳統命理分析應用程式，提供八字排盤和運勢預測',
         
         // Features
         'feature_offline': '離線翻譯',
@@ -513,6 +545,9 @@ const translations = {
         'feature_work_checkin': '工作打卡',
         'feature_timestamp': '時間戳記',
         'feature_location': '位置資訊',
+        'feature_bazi_chart': '八字排盤',
+        'feature_lunar_calendar': '農曆轉換',
+        'feature_divination': '周易占卜',
         
         // About Section
         'about_title': '關於TianDev工作室',
@@ -570,6 +605,8 @@ const translations = {
         'app_voice_recorder_desc': 'Transcripción de voz a texto impulsada por IA con alta precisión',
         'app_watermark_camera_name': 'Cámara con marca de agua',
         'app_watermark_camera_desc': 'Cámara profesional con marca de agua para registro de trabajo y asistencia',
+        'app_bazi_master_name': 'Maestro Bazi',
+        'app_bazi_master_desc': 'Aplicación profesional de astrología china y adivinación con análisis Bazi',
         
         // Features
         'feature_offline': 'Traducción sin conexión',
@@ -590,6 +627,9 @@ const translations = {
         'feature_work_checkin': 'Registro de trabajo',
         'feature_timestamp': 'Marca de tiempo',
         'feature_location': 'Ubicación',
+        'feature_bazi_chart': 'Carta Bazi',
+        'feature_lunar_calendar': 'Calendario lunar',
+        'feature_divination': 'Adivinación',
         
         // About Section
         'about_title': 'Acerca de TianDev Studio',
@@ -647,6 +687,8 @@ const translations = {
         'app_voice_recorder_desc': 'Transcrição de voz para texto alimentada por IA com alta precisão',
         'app_watermark_camera_name': 'Câmera com marca d\'água',
         'app_watermark_camera_desc': 'Câmera profissional com marca d\'água para registro de trabalho e presença',
+        'app_bazi_master_name': 'Mestre Bazi',
+        'app_bazi_master_desc': 'Aplicativo profissional de astrologia chinesa e adivinhação com análise Bazi',
         
         // Features
         'feature_offline': 'Tradução offline',
@@ -667,6 +709,9 @@ const translations = {
         'feature_work_checkin': 'Check-in de trabalho',
         'feature_timestamp': 'Carimbo de tempo',
         'feature_location': 'Localização',
+        'feature_bazi_chart': 'Carta Bazi',
+        'feature_lunar_calendar': 'Calendário lunar',
+        'feature_divination': 'Adivinhação',
         
         // About Section
         'about_title': 'Sobre o TianDev Studio',
@@ -724,6 +769,8 @@ const translations = {
         'app_voice_recorder_desc': 'Trascrizione da voce a testo alimentata da IA con alta precisione',
         'app_watermark_camera_name': 'Fotocamera filigrana',
         'app_watermark_camera_desc': 'Fotocamera professionale con filigrana per timbratura lavoro e presenza',
+        'app_bazi_master_name': 'Maestro Bazi',
+        'app_bazi_master_desc': 'Applicazione professionale di astrologia cinese e divinazione con analisi Bazi',
         
         // Features
         'feature_offline': 'Traduzione offline',
@@ -744,6 +791,9 @@ const translations = {
         'feature_work_checkin': 'Check-in lavoro',
         'feature_timestamp': 'Timestamp',
         'feature_location': 'Posizione',
+        'feature_bazi_chart': 'Grafico Bazi',
+        'feature_lunar_calendar': 'Calendario lunare',
+        'feature_divination': 'Divinazione',
         
         // About Section
         'about_title': 'Chi è TianDev Studio',
@@ -801,6 +851,8 @@ const translations = {
         'app_voice_recorder_desc': 'تحويل الصوت إلى نص مدعوم بالذكاء الاصطناعي بدقة عالية',
         'app_watermark_camera_name': 'كاميرا العلامة المائية',
         'app_watermark_camera_desc': 'كاميرا علامة مائية احترافية لتسجيل الدخول في العمل والحضور',
+        'app_bazi_master_name': 'سيد بازي',
+        'app_bazi_master_desc': 'تطبيق احترافي للتنجيم الصيني والعرافة مع تحليل بازي',
         
         // Features
         'feature_offline': 'ترجمة بدون اتصال',
@@ -821,6 +873,9 @@ const translations = {
         'feature_work_checkin': 'تسجيل دخول العمل',
         'feature_timestamp': 'الطابع الزمني',
         'feature_location': 'الموقع',
+        'feature_bazi_chart': 'مخطط بازي',
+        'feature_lunar_calendar': 'التقويم القمري',
+        'feature_divination': 'العرافة',
         
         // About Section
         'about_title': 'حول استوديو TianDev',
@@ -878,6 +933,8 @@ const translations = {
         'app_voice_recorder_desc': 'उच्च सटीकता के साथ AI-संचालित वॉयस टू टेक्स्ट ट्रांसक्रिप्शन',
         'app_watermark_camera_name': 'वॉटरमार्क कैमरा',
         'app_watermark_camera_desc': 'कार्य चेक-इन और उपस्थिति के लिए पेशेवर वॉटरमार्क कैमरा',
+        'app_bazi_master_name': 'बाज़ी मास्टर',
+        'app_bazi_master_desc': 'बाज़ी विश्लेषण के साथ पेशेवर चीनी ज्योतिष और भाग्य बताने वाला ऐप',
         
         // Features
         'feature_offline': 'ऑफ़लाइन अनुवाद',
@@ -898,6 +955,9 @@ const translations = {
         'feature_work_checkin': 'कार्य चेक-इन',
         'feature_timestamp': 'टाइमस्टैम्प',
         'feature_location': 'स्थान',
+        'feature_bazi_chart': 'बाज़ी चार्ट',
+        'feature_lunar_calendar': 'चंद्र कैलेंडर',
+        'feature_divination': 'भविष्यवाणी',
         
         // About Section
         'about_title': 'TianDev स्टूडियो के बारे में',
@@ -955,6 +1015,8 @@ const translations = {
         'app_voice_recorder_desc': 'Транскрипция речи в текст на основе ИИ с высокой точностью',
         'app_watermark_camera_name': 'Камера с водяным знаком',
         'app_watermark_camera_desc': 'Профессиональная камера с водяным знаком для рабочих отметок и посещаемости',
+        'app_bazi_master_name': 'Мастер Бацзы',
+        'app_bazi_master_desc': 'Профессиональное приложение китайской астрологии и гадания с анализом Бацзы',
         
         // Features
         'feature_offline': 'Офлайн перевод',
@@ -975,6 +1037,9 @@ const translations = {
         'feature_work_checkin': 'Рабочая отметка',
         'feature_timestamp': 'Временная метка',
         'feature_location': 'Местоположение',
+        'feature_bazi_chart': 'Карта Бацзы',
+        'feature_lunar_calendar': 'Лунный календарь',
+        'feature_divination': 'Гадание',
         
         // About Section
         'about_title': 'О TianDev Studio',
