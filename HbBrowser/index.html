@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HuaBan Browser - Advanced Privacy Browser</title>
-    <meta name="description" content="Advanced privacy-focused browser with ad blocking, multi-tab management, and comprehensive security features for iOS.">
-    <meta name="keywords" content="privacy browser, ad blocker, iOS browser, secure browsing, multi-tab, bookmark manager">
+    <title>Petal Browser - Privacy-Focused Browser</title>
+    <meta name="description" content="Privacy-focused browser with ad blocking and secure browsing for iOS.">
+    <meta name="keywords" content="privacy browser, ad blocker, iOS browser, secure browsing, petal browser">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="HuaBan Browser - Advanced Privacy Browser">
-    <meta property="og:description" content="Advanced privacy-focused browser with comprehensive security features">
-    <meta property="og:image" content="../assets/icons/huaban-browser.svg">
+    <meta property="og:title" content="Petal Browser - Privacy-Focused Browser">
+    <meta property="og:description" content="Privacy-focused browser with ad blocking and secure browsing">
+    <meta property="og:image" content="../assets/icons/petal-browser.svg">
     <meta property="og:url" content="https://www.forapp.store/HbBrowser/">
     
     <!-- Favicon -->
@@ -49,7 +49,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin: 60px 0;
+            margin: 40px 0;
         }
         
         .feature-card {
@@ -58,26 +58,16 @@
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
         
         .feature-icon {
-            font-size: 48px;
+            font-size: 3em;
             margin-bottom: 20px;
-        }
-        
-        .security-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .security-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border-left: 4px solid #667eea;
         }
         
         .download-section {
@@ -94,49 +84,119 @@
         .app-store-large img {
             height: 60px;
         }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .stat-card {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .language-support {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .language-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 40px 0;
-        }
-        
-        .language-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
-        }
     </style>
 </head>
-<body{"file_path": "/Users/tian/Documents/AppDev/4.官网/HbBrowser/index.html", "explanation": "为花瓣浏览器应用创建专门的主页，展示其功能特性和下载链接。", "content":
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="../">
+                    <img src="../assets/logo.svg" alt="TianDev Studio" class="logo">
+                    <span class="brand-name">TianDev Studio</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../#home">Home</a></li>
+                <li><a href="../#apps">Apps</a></li>
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- App Hero Section -->
+    <section class="app-hero">
+        <div class="container">
+            <div class="app-icon-large">
+                <img src="../assets/icons/petal-browser.svg" alt="Petal Browser">
+            </div>
+            <h1>Petal Browser</h1>
+            <p class="hero-subtitle">Privacy-Focused Browser for iOS</p>
+            <p>Advanced privacy protection with ad blocking, secure browsing, and fast performance</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Ad Blocker</h3>
+                    <p>Built-in ad blocker removes annoying ads and improves page loading speed for a cleaner browsing experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy Protection</h3>
+                    <p>Advanced privacy features protect your data from tracking and ensure secure browsing sessions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Browsing</h3>
+                    <p>Optimized engine delivers lightning-fast page loading and smooth scrolling performance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Optimized</h3>
+                    <p>Designed specifically for iOS with intuitive gestures and mobile-friendly interface.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔖</div>
+                    <h3>Bookmark Manager</h3>
+                    <p>Organize your favorite websites with smart bookmark management and quick access features.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multi-Tab Support</h3>
+                    <p>Browse multiple websites simultaneously with efficient tab management and switching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <h2>Download Petal Browser</h2>
+            <p>Available on the App Store for iPhone and iPad</p>
+            <a href="https://apps.apple.com/cn/app/id6754108984" class="app-store-large">
+                <img src="../assets/app-store-badge.svg" alt="Download on App Store">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TianDev Studio</h3>
+                    <p>Creating innovative iOS applications</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy-en.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service-en.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: support@forapp.store</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TianDev Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
