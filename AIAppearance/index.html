@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI测颜值 - Beauty Scan | 智能面部分析应用</title>
+    <meta name="description" content="AI测颜值是一款基于人工智能的面部分析娱乐应用，提供颜值评分、面部特征分析等功能。支持13种语言，免费增值模式。">
+    <meta name="keywords" content="AI测颜值,Beauty Scan,面部分析,颜值评分,人工智能,iOS应用">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI测颜值 - Beauty Scan | 智能面部分析应用">
+    <meta property="og:description" content="AI测颜值是一款基于人工智能的面部分析娱乐应用，提供颜值评分、面部特征分析等功能。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devforapp.github.io/AIAppearance/">
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e91e63;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e91e63;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #FF6B9D, #F8B500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+
+        .app-store-btn {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .app-store-btn:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-store-btn img {
+            height: 60px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #FF6B9D, #C44569);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screenshot {
+            background: white;
+            border-radius: 20px;
+            padding: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #FF6B9D, #F8B500);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid #e91e63;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(135deg, #FF6B9D, #C44569);
+            color: white;
+            border-color: #FF6B9D;
+        }
+
+        .pricing-card.featured::before {
+            content: "推荐";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #F8B500;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e91e63;
+            margin: 1rem 0;
+        }
+
+        .pricing-card.featured .price {
+            color: white;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pricing-card.featured .features-list li {
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .features-grid,
+            .screenshots-grid,
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .entertainment-notice {
+            background: rgba(255, 193, 7, 0.1);
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="../" class="logo">
+                <img src="../assets/icons/ai-appearance.svg" alt="AI测颜值">
+                <span>AI测颜值</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">功能特色</a></li>
+                <li><a href="#screenshots">应用截图</a></li>
+                <li><a href="#pricing">订阅方案</a></li>
+                <li><a href="privacy_policy_zh.html">隐私政策</a></li>
+                <li><a href="terms_of_service_zh.html">使用条款</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>AI测颜值</h1>
+            <p class="subtitle">智能面部分析 · 娱乐评分体验</p>
+            <p class="description">
+                基于先进的人工智能技术，为您提供有趣的面部分析和颜值评分体验。
+                支持13种语言，免费增值模式，让AI告诉你的颜值分数！
+            </p>
+            
+            <div class="entertainment-notice">
+                <strong>⚠️ 娱乐免责声明：</strong>本应用仅供娱乐使用，所有分析结果不具有科学或医学价值，请勿用于严肃决策。
+            </div>
+
+            <div>
+                <a href="#" class="app-store-btn">
+                    <img src="../assets/app-store-badge.svg" alt="Download on App Store">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">功能特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI智能分析</h3>
+                    <p>基于Microsoft Azure Face API，提供专业的面部特征识别和分析，包括年龄预测、情绪识别、面部特征评估等。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>颜值评分系统</h3>
+                    <p>独特的AI颜值评分算法，综合多个维度计算0-100分的颜值分数，让您了解自己的魅力指数。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>多语言支持</h3>
+                    <p>支持13种语言界面，包括中文、英语、日语、韩语、德语、法语等，满足全球用户需求。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>免费增值模式</h3>
+                    <p>每日2次免费测试，观看广告获取额外次数，Pro订阅享受无限测试和高级功能。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>详细分析报告</h3>
+                    <p>提供全面的面部分析报告，包括年龄、性别、情绪、面部特征等多维度信息。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>隐私保护</h3>
+                    <p>照片仅用于分析，不会存储在服务器上，分析完成后立即删除，保护您的隐私安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title">应用截图</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        主界面<br>拍照/选择照片
+                    </div>
+                    <h3>简洁主界面</h3>
+                    <p>直观的操作界面，轻松拍照或选择相册照片进行分析</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        AI分析中<br>智能处理
+                    </div>
+                    <h3>AI智能分析</h3>
+                    <p>先进的人工智能算法，快速准确地分析面部特征</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        分析结果<br>颜值评分
+                    </div>
+                    <h3>详细分析结果</h3>
+                    <p>全面的分析报告，包括颜值评分和各项面部特征数据</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        Pro订阅<br>高级功能
+                    </div>
+                    <h3>Pro订阅服务</h3>
+                    <p>无限次测试、无广告体验、深度分析等高级功能</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">订阅方案</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>免费版</h3>
+                    <div class="price">免费</div>
+                    <ul class="features-list">
+                        <li>✅ 每日2次免费测试</li>
+                        <li>✅ 基础颜值评分</li>
+                        <li>✅ 观看广告获取额外次数</li>
+                        <li>✅ 基础面部分析</li>
+                        <li>❌ 无限次测试</li>
+                        <li>❌ 深度分析功能</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Pro月订阅</h3>
+                    <div class="price">¥18/月</div>
+                    <ul class="features-list">
+                        <li>✅ 无限次测试</li>
+                        <li>✅ 无广告体验</li>
+                        <li>✅ 深度分析功能</li>
+                        <li>✅ 高级颜值评分</li>
+                        <li>✅ 详细面部特征分析</li>
+                        <li>✅ 优先客服支持</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro年订阅</h3>
+                    <div class="price">¥128/年</div>
+                    <p style="color: #27ae60; font-weight: bold;">节省40%</p>
+                    <ul class="features-list">
+                        <li>✅ 无限次测试</li>
+                        <li>✅ 无广告体验</li>
+                        <li>✅ 深度分析功能</li>
+                        <li>✅ 高级颜值评分</li>
+                        <li>✅ 详细面部特征分析</li>
+                        <li>✅ 优先客服支持</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy_policy_zh.html">隐私政策</a>
+                <a href="terms_of_service_zh.html">使用条款</a>
+                <a href="privacy_policy_en.html">Privacy Policy</a>
+                <a href="terms_of_service_en.html">Terms of Service</a>
+                <a href="mailto:devapptian@gmail.com">联系我们</a>
+            </div>
+            <p>&copy; 2024 TianDev Studio. All rights reserved.</p>
+            <p>AI测颜值 - 仅供娱乐使用，分析结果不具有科学或医学价值</p>
+        </div>
+    </footer>
+</body>
+</html>
