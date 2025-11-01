@@ -33,6 +33,8 @@ const translations = {
         'app_watermark_camera_desc': 'Professional watermark camera for work check-in and attendance',
         'app_bazi_master_name': 'Bazi Master',
         'app_bazi_master_desc': 'Professional Chinese astrology and fortune telling app with Bazi analysis',
+        'app_ai_appearance_name': 'AI Appearance',
+        'app_ai_appearance_desc': 'AI-powered facial analysis and beauty scoring app for entertainment',
         
         // Features
         'feature_offline': 'Offline Translation',
@@ -56,6 +58,9 @@ const translations = {
         'feature_bazi_chart': 'Bazi Chart',
         'feature_lunar_calendar': 'Lunar Calendar',
         'feature_divination': 'Divination',
+        'feature_ai_analysis': 'AI Analysis',
+        'feature_beauty_score': 'Beauty Score',
+        'feature_13_languages': '13 Languages',
         
         // About Section
         'about_title': 'About TianDev Studio',
@@ -63,6 +68,16 @@ const translations = {
         'stat_apps': 'Apps Published',
         'stat_languages': 'Languages Supported',
         'stat_downloads': 'Downloads',
+        
+        // About Features
+        'feature_multilingual_title': 'Multi-language Support',
+        'feature_multilingual_desc': 'Support for 12+ languages including English, Chinese, Japanese, Arabic, and more',
+        'feature_responsive_title': 'Responsive Design',
+        'feature_responsive_desc': 'Optimized for all devices - desktop, tablet, and mobile',
+        'feature_performance_title': 'High Performance',
+        'feature_performance_desc': 'Fast loading times and smooth user experience',
+        'feature_security_title': 'Security First',
+        'feature_security_desc': 'Built with security and privacy as top priorities',
         
         // Contact Section
         'contact_title': 'Get in Touch',
@@ -115,6 +130,8 @@ const translations = {
         'app_watermark_camera_desc': '专业水印相机，用于工作打卡和考勤',
         'app_bazi_master_name': '五行八字大师',
         'app_bazi_master_desc': '专业的中国传统命理分析应用，提供八字排盘和运势预测',
+        'app_ai_appearance_name': 'AI测颜值',
+        'app_ai_appearance_desc': 'AI驱动的面部分析和颜值评分娱乐应用',
         
         // Features
         'feature_offline': '离线翻译',
@@ -138,6 +155,9 @@ const translations = {
         'feature_bazi_chart': '八字排盘',
         'feature_lunar_calendar': '农历转换',
         'feature_divination': '周易占卜',
+        'feature_ai_analysis': 'AI分析',
+        'feature_beauty_score': '颜值评分',
+        'feature_13_languages': '13种语言',
         
         // About Section
         'about_title': '关于TianDev工作室',
@@ -145,6 +165,16 @@ const translations = {
         'stat_apps': '已发布应用',
         'stat_languages': '支持语言',
         'stat_downloads': '下载量',
+        
+        // About Features
+        'feature_multilingual_title': '多语言支持',
+        'feature_multilingual_desc': '支持12+种语言，包括英语、中文、日语、阿拉伯语等',
+        'feature_responsive_title': '响应式设计',
+        'feature_responsive_desc': '针对所有设备优化 - 桌面、平板和手机',
+        'feature_performance_title': '高性能',
+        'feature_performance_desc': '快速加载时间和流畅的用户体验',
+        'feature_security_title': '安全第一',
+        'feature_security_desc': '以安全和隐私为首要优先级构建',
         
         // Contact Section
         'contact_title': '联系我们',
@@ -228,6 +258,16 @@ const translations = {
         'stat_languages': 'サポート言語',
         'stat_downloads': 'ダウンロード数',
         
+        // About Features
+        'feature_multilingual_title': '多言語サポート',
+        'feature_multilingual_desc': '英語、中国語、日本語、アラビア語など12以上の言語をサポート',
+        'feature_responsive_title': 'レスポンシブデザイン',
+        'feature_responsive_desc': 'デスクトップ、タブレット、モバイルなど全てのデバイスに最適化',
+        'feature_performance_title': '高性能',
+        'feature_performance_desc': '高速読み込み時間とスムーズなユーザーエクスペリエンス',
+        'feature_security_title': 'セキュリティ第一',
+        'feature_security_desc': 'セキュリティとプライバシーを最優先に構築',
+        
         // Contact Section
         'contact_title': 'お問い合わせ',
         'contact_subtitle': 'ご質問やコラボレーションをお考えですか？ぜひお聞かせください。',
@@ -310,6 +350,16 @@ const translations = {
         'stat_languages': 'Unterstützte Sprachen',
         'stat_downloads': 'Downloads',
         
+        // About Features
+        'feature_multilingual_title': 'Mehrsprachige Unterstützung',
+        'feature_multilingual_desc': 'Unterstützung für 12+ Sprachen einschließlich Englisch, Chinesisch, Japanisch, Arabisch und mehr',
+        'feature_responsive_title': 'Responsives Design',
+        'feature_responsive_desc': 'Optimiert für alle Geräte - Desktop, Tablet und Mobilgerät',
+        'feature_performance_title': 'Hohe Leistung',
+        'feature_performance_desc': 'Schnelle Ladezeiten und reibungslose Benutzererfahrung',
+        'feature_security_title': 'Sicherheit zuerst',
+        'feature_security_desc': 'Mit Sicherheit und Datenschutz als oberste Prioritäten entwickelt',
+        
         // Contact Section
         'contact_title': 'Kontakt aufnehmen',
         'contact_subtitle': 'Haben Sie Fragen oder möchten zusammenarbeiten? Wir freuen uns auf Ihre Nachricht.',
@@ -391,6 +441,16 @@ const translations = {
         'stat_apps': 'Applications publiées',
         'stat_languages': 'Langues supportées',
         'stat_downloads': 'Téléchargements',
+        
+        // About Features
+        'feature_multilingual_title': 'Support multilingue',
+        'feature_multilingual_desc': 'Support pour 12+ langues incluant l\'anglais, le chinois, le japonais, l\'arabe et plus',
+        'feature_responsive_title': 'Design réactif',
+        'feature_responsive_desc': 'Optimisé pour tous les appareils - ordinateur, tablette et mobile',
+        'feature_performance_title': 'Haute performance',
+        'feature_performance_desc': 'Temps de chargement rapides et expérience utilisateur fluide',
+        'feature_security_title': 'Sécurité d\'abord',
+        'feature_security_desc': 'Construit avec la sécurité et la confidentialité comme priorités principales',
         
         // Contact Section
         'contact_title': 'Nous contacter',
