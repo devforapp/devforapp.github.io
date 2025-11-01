@@ -218,14 +218,20 @@ class LanguageManager {
         const privacyLink = document.getElementById('privacy-link');
         if (privacyLink) {
             const privacyFile = this.currentLanguage === 'zh-CN' ? 'privacy_policy_zh.html' : 'privacy_policy_en.html';
-            privacyLink.href = `https://www.forapp.store/AIAppearance/${privacyFile}`;
+            const privacyUrl = `https://www.forapp.store/AIAppearance/${privacyFile}`;
+            privacyLink.href = privacyUrl;
+            privacyLink.target = '_blank'; // Open in new tab
+            console.log('Privacy link updated:', privacyUrl);
         }
         
         // Update terms of service link
         const termsLink = document.getElementById('terms-link');
         if (termsLink) {
             const termsFile = this.currentLanguage === 'zh-CN' ? 'terms_of_service_zh.html' : 'terms_of_service_en.html';
-            termsLink.href = `https://www.forapp.store/AIAppearance/${termsFile}`;
+            const termsUrl = `https://www.forapp.store/AIAppearance/${termsFile}`;
+            termsLink.href = termsUrl;
+            termsLink.target = '_blank'; // Open in new tab
+            console.log('Terms link updated:', termsUrl);
         }
     }
 
@@ -251,5 +257,10 @@ class LanguageManager {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new LanguageManager();
+    const languageManager = new LanguageManager();
+    
+    // Ensure links are updated after a short delay to handle any timing issues
+    setTimeout(() => {
+        languageManager.updateDynamicLinks();
+    }, 100);
 });
