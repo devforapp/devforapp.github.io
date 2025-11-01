@@ -218,14 +218,14 @@ class LanguageManager {
         const privacyLink = document.getElementById('privacy-link');
         if (privacyLink) {
             const privacyFile = this.currentLanguage === 'zh-CN' ? 'privacy_policy_zh.html' : 'privacy_policy_en.html';
-            privacyLink.href = privacyFile;
+            privacyLink.href = `https://www.forapp.store/AIAppearance/${privacyFile}`;
         }
         
         // Update terms of service link
         const termsLink = document.getElementById('terms-link');
         if (termsLink) {
             const termsFile = this.currentLanguage === 'zh-CN' ? 'terms_of_service_zh.html' : 'terms_of_service_en.html';
-            termsLink.href = termsFile;
+            termsLink.href = `https://www.forapp.store/AIAppearance/${termsFile}`;
         }
     }
 
