@@ -18,6 +18,16 @@
     .section-title{font-size:1.5rem;margin-top:24px}
     .links{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
     a{color:#667eea;text-decoration:none}
+
+    /* 响应式适配 */
+    img{max-width:100%;height:auto}
+    @media (max-width: 640px){
+      .hero{flex-direction:column;gap:16px}
+      .hero h1{font-size:1.75rem}
+      .container{padding:16px}
+      .hero .icon{width:80px;height:80px}
+      .features{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
