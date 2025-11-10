@@ -6,6 +6,7 @@
     <title>五行八字大师 - 专业八字命理分析应用</title>
     <meta name="description" content="五行八字大师是一款专业的八字命理分析iOS应用，支持八字排盘、农历转换、五行分析、周易占卜等功能。">
     <meta name="keywords" content="八字,命理,五行,占卜,周易,紫微斗数,黄历,iOS应用">
+    <script src="../assets/js/lang-router.js" data-index-lang="zh" data-has-en="true"></script>
     
     <style>
         * {
@@ -118,6 +119,10 @@
         .download-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 122, 255, 0.6);
+        }
+        @media (max-width: 768px){
+            .hero h1{ font-size: 2rem; }
+            .container{ padding: 0 16px; }
         }
         
         .features {

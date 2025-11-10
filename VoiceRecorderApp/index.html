@@ -6,6 +6,7 @@
     <title>语音转文字 - AI智能录音转写应用</title>
     <meta name="description" content="专业的iOS语音转文字应用，支持高精度AI语音识别，实时录音转写，智能文字编辑，让您的语音瞬间变成文字。">
     <meta name="keywords" content="语音转文字,录音转写,AI语音识别,语音笔记,录音应用,iOS应用">
+    <script src="../assets/js/lang-router.js" data-index-lang="zh" data-has-en="true"></script>
     
     <!-- Open Graph -->
     <meta property="og:title" content="语音转文字 - AI智能录音转写应用">
@@ -137,6 +138,10 @@
         
         .footer-links {
             margin-top: 30px;
+        }
+        @media (max-width: 768px){
+            .feature-grid{ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+            .container{ padding: 0 16px; }
         }
         
         .footer-links a {
